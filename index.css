@@ -1,0 +1,75 @@
+.container {
+  display: grid;
+  border: 2px solid red;
+  height: 50%;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-columns: 200px 600px;
+  grid-template-areas:
+    "nb nb nb nb nb"
+    "main main main main main"
+    "ft ft ft ft ft";
+  gap: 10px;
+}
+.flexbox-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card-container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column: repeat(2, 1fr);
+  gap: 5px;
+  justify-content: stretch;
+}
+.circus-baby-img {
+  grid-area: 1/1/1/2;
+}
+.circus-baby-info {
+  grid-area: 1/2/2/3;
+}
+
+.box {
+  border: 2px solid rgb(252, 3, 252);
+}
+
+.navbar {
+  grid-area: nb;
+}
+.content {
+  grid-area: main;
+}
+.footer {
+  grid-area: ft;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+}
+ul {
+  list-style: none;
+}
+.card {
+  box-shadow: 2px 10px 10px grey;
+}
+.flexbox-container > div {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-image: url("./assets/Party_Room_1.webp");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.red-text {
+  color: red;
+}
+.white-text {
+  color: white;
+}
+.circus-baby-info {
+  background-color: black;
+}
