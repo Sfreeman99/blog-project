@@ -1,0 +1,18 @@
+html {
+  background-color: black;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.brown-font {
+  color: brown;
+}
+.italic {
+  font-style: italic;
+}
+
+body {
+  background-image: none;
+}

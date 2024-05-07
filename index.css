@@ -1,6 +1,5 @@
 .container {
   display: grid;
-  border: 2px solid red;
   height: 50%;
   grid-template-rows: 100px 1fr 100px;
   grid-template-columns: 200px 600px;
@@ -72,4 +71,17 @@ body {
 }
 .circus-baby-info {
   background-color: black;
+}
+.black-background {
+  background-color: rgb(0, 0, 0);
+}
+.nav-link {
+  text-decoration: none;
+  color: red;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.nav-link:hover {
+  color: orange;
 }
