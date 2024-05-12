@@ -3,7 +3,7 @@ html {
 }
 .flex-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .brown-font {
@@ -15,4 +15,13 @@ html {
 
 body {
   background-image: none;
+}
+img {
+  width: 100px;
+}
+
+@media (min-width: 600px) {
+  img {
+    width: 500px;
+  }
 }
