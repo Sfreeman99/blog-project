@@ -1,14 +1,15 @@
 @import "./button.css";
+@import "./footer.css";
+@import "./nav-link.css";
 
 .container {
   display: grid;
-  height: 50%;
-  grid-template-rows: 100px 1fr 100px;
-  grid-template-columns: 200px 600px;
+  grid-template-rows: 100px 200px;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "nb nb nb nb nb"
-    "main main main main main"
-    "ft ft ft ft ft";
+    "nb nb"
+    "main main"
+    "ft ft";
   gap: 10px;
 }
 .flexbox-container {
@@ -19,16 +20,10 @@
 }
 .card-container {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-column: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column: 1fr;
   gap: 5px;
-  justify-content: stretch;
-}
-.circus-baby-img {
-  grid-area: 1/1/1/2;
-}
-.circus-baby-info {
-  grid-area: 1/2/2/3;
+  /* justify-content: stretch; */
 }
 
 .box {
@@ -61,9 +56,7 @@ ul {
   font-family: Arial, Helvetica, sans-serif;
 }
 body {
-  background-image: url("./assets/Party_Room_1.webp");
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-image: url("../../assets/Party_Room_1.webp");
 }
 .red-text {
   color: red;
@@ -77,13 +70,20 @@ body {
 .black-background {
   background-color: rgb(0, 0, 0);
 }
-.nav-link {
-  text-decoration: none;
-  color: red;
-  font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-}
-.nav-link:hover {
-  color: orange;
+
+@media (min-width: 800px) {
+  .container {
+    display: grid;
+    height: 50%;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: 200px 600px;
+    grid-template-areas:
+      "nb nb nb nb nb"
+      "main main main main main"
+      "ft ft ft ft ft";
+    gap: 10px;
+  }
+  .circus-baby-info {
+    grid-area: 1/2/2/3;
+  }
 }
