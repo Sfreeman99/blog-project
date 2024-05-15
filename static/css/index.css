@@ -4,8 +4,8 @@
 
 .container {
   display: grid;
-  grid-template-rows: 100px 200px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px;
+  grid-template-columns: 1fr;
   grid-template-areas:
     "nb nb"
     "main main"
@@ -36,7 +36,7 @@
 .content {
   grid-area: main;
 }
-.footer {
+footer {
   grid-area: ft;
 }
 
